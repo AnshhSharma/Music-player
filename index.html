@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <nav>
+        <UL>
+            <li class="brand "><img src="media/logo.png" alt="Tron" >Tron</li>
+            <li id="home">Home</li>
+            <li id="about">About</li>
+        </UL>
+    </nav>
+ 
+    <div class="container">
+        
+        <div class="songList">
+            <h2>Best of BB - Bhuvan Bam</h2>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1" >
+                    <span class="songName">Sang Hoon tere</span>
+                    <span class="songListPlay"><span class="timeStamp">04:44 <i id="0" class="fa-regular songItemPlay  fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2" >
+                    <span class="songName">Heer Ranjha</span>
+                    <span class="songListPlay"><span class="timeStamp">04:06 <i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3" >
+                    <span class="songName">Safar</span>
+                    <span class="songListPlay"><span class="timeStamp">03:34 <i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4" >
+                    <span class="songName">Rahguzar</span>
+                    <span class="songListPlay"><span class="timeStamp">04:16 <i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5" >
+                    <span class="songName">Bas Mein</span>
+                    <span class="songListPlay"><span class="timeStamp">03:40 <i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6" >
+                    <span class="songName">Didi Song</span>
+                    <span class="songListPlay"><span class="timeStamp">01:26 <i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="songBanner"></div> -->
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0" >
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="media/gifs/playing.gif" width="42px" id="gif"><span id="masterSongName">Sang Hoon tere</span>
+        </div>
+        <div class="volumes">
+            <span>
+                <i class="fa-solid fa-2x fa-volume-high" id="muteUnmute"></i><input type="range" class="volumeSlider" id="volSlider" min="0" max="100" value=50>       
+            </span>
+        </div>
+        <div class="timeBox">
+            <span id="curTimeText">00:00</span>/ <span id="durTimeText">00:00</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3b437a6fc5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
